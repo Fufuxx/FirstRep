@@ -1,0 +1,38 @@
+<!-- index.html -->
+<!doctype html>
+
+<!-- ASSIGN OUR ANGULAR MODULE -->
+<html ng-app="scotchTodo">
+<head>
+	<!-- META -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"><!-- Optimize mobile viewport -->
+
+	<title>Hue</title>
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+	<script src="core.js"></script>
+
+</head>
+<body ng-controller="mainController">
+	<div class="container-fluid">
+		<div class="jumbotron">
+		  <h1>Hue Localhost Test</h1>
+		  <p>Light is {{ lightStatus }}</p>
+		  <p>
+		  	<a class="btn btn-success btn-lg" ng-click="switchOn()" role="button">Switch On</a>
+		  	<a class="btn btn-danger btn-lg" ng-click="switchOff()" role="button">Switch Off</a>
+		  </p>
+		  <p>
+		  	<a class="btn btn-danger btn-lg" ng-click="redTest()" role="button">Red Ambient</a>
+		  	<a class="btn btn-success btn-lg" ng-click="greenTest()" role="button">Green Ambient</a>
+		  	<a class="btn btn-info btn-lg" ng-click="blueTest()" role="button">Blue Ambient</a>
+		  </p>
+		  <p>
+		  	<a class="btn btn-danger btn-lg" ng-click="alert()" role="button">Alert</a>
+		  	<a class="btn btn-success btn-lg" ng-click="colorLoop()" role="button">Color Loop</a>
+		  </p>
+		</div>
+</body>
+</html>
